@@ -1,0 +1,306 @@
+
+/* 
+@font-face{
+    font-family:"reforma";
+    src:url(../fonts/Reforma\ Grotesk\ Medium.otf);
+    src:url(../fonts/Reforma.ttf);
+    
+} */
+
+ 
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}  
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  /* background: #f8fafc; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d1d1b;
+  font-size: 16px ;
+  font-weight: 500;
+  
+}
+/* basic css end */
+
+/* common css start */
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #1d1d1b;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+  color: #748f9e;
+}
+
+.my-btn {
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  background: #10a2ef;
+  padding: 10px 60px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+ 
+/*// end of common css */
+
+/* main css start */
+
+/* ===== header part start ======= */
+.header nav {
+  border-bottom: 4px solid #f8e72c;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  color: rgba(0, 0, 0, .7);
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1d1d1b;
+}
+
+
+.moving-text span {
+  white-space: nowrap;
+  font-weight: 600;
+  border-right: 4px solid #f8e72c;
+  padding-right: 10px;
+}
+/* =====//end of header part ======= */
+
+
+/* ===== post-btn start ======= */
+.post-btn .previous-block {
+  border-left: 4px solid #f8e72c;
+}
+
+.post-btn .next-btn,
+.post-btn .previous-btn {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.post-btn .next-block {
+  border-right: 4px solid #f8e72c;
+  background: linear-gradient(to left, #faed61, #fff, #fff);
+}
+/* =====// end of post-btn ======= */
+
+
+/* ===== post-heading section start ======= */
+.post-heading {
+  text-align: right;
+  border-bottom: 2px solid #f8e72c;
+  padding-bottom: 10px;
+}
+/* =====//end of post-heading section ======= */
+
+/* =====left-side-bar section start ======= */
+
+/*=== table start === */
+.table td, .table th{
+  padding: .5rem;
+}
+
+.table tr {
+  background: url(../images/page-5/table-bg.png) no-repeat top center/cover;
+  
+}
+
+.table tr td {
+  border-bottom: 1px solid #f8e72c;
+}
+/* ===//end of table ===*/
+
+/* === color box start === */
+.color-box {
+  padding: 150px 20px ;
+  background: #3e0e1b;
+}
+
+.color-box span {
+  font-size: 35px;
+  display: block;
+  white-space: nowrap;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+/* ===//end of color box  === */
+
+/* ===== side-bottom-link-heading section start ======= */
+.side-bottom-link-heading {
+  font-weight: 800;
+  border-right: 4px solid #f8e72c;
+  padding-right: 15px;
+}
+
+.side-bottom-link .link{
+  display: block;
+  padding: .5rem;
+  background: url(../images/page-5/side-bottom-link.png) no-repeat top center/cover;
+  text-align: right;
+  color: #1d1d1b;
+}
+
+.side-bottom-link .link:hover {
+  box-shadow:  0 2px 5px 5px rgba(0,0,0, .2);
+  position: relative;
+  z-index: 1;
+}
+/* =====//end of side-bottom-link-heading section ======= */
+
+/* =====//end ofleft-side-bar section ======= */
+
+/* ===== main post section start ======= */
+ article p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: right;
+  font-weight: 400;
+}
+
+article  .img-bottom-heading {
+  font-size: 90%;
+  padding-top: 10px;
+  text-align: right;
+}
+/* =====//end of main post section ======= */
+
+/* ===== more-on-net section start ======= */
+.more-on-net-heading {
+  font-weight: 800;
+  border-right: 4px solid #f8e72c;
+  padding-right: 15px;
+  text-align: right;
+  margin: 60px 0 30px 0;
+}
+
+.more-on-net .img-title {
+  font-size: 90%;
+  text-align: right;
+}
+/* =====//end of more-on-net section ======= */
+
+/* ===== comment section start ======= */
+.comment .comment-heading {
+  font-weight: 800;
+  border-right: 4px solid #f8e72c;
+  padding-right: 15px;
+  text-align: right;
+  margin: 60px 0 30px 0;
+}
+
+.comment .comment-box {
+  background: url(../images/page-5/comment-bg.png) no-repeat top center/cover;
+  padding: .5rem;
+}
+
+.comment .mani-comment {
+  text-align: right;
+  font-weight: 600;
+}
+
+.comment .commenter {
+  text-align: right;
+  font-size: 90%;
+}
+/* =====//end of comment section ======= */
+
+
+/* ===== ? section start ======= */
+/* =====//end of ? section ======= */
+
+
+
+
+/* ===== ? section start ======= */
+/* =====//end of ? section ======= */
+
+
+
+
+
+
+
+
+
+
+
+/* ===== footer part start ======= */
+.footer {
+  background: #b3b3b3;
+  min-height: 190px;
+  display: grid;
+  place-items: center;
+}
+
+/* =====//end of footer part ======= */
+
+/* ======= Responsive start ======= */
+/* Small devices (landscape phones upto 767px) */
+@media (max-width: 767px) {
+  
+}
+
+
+@media (max-width: 991px) {
+  .navbar-light .navbar-nav .nav-link {
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+}
+
+
+@media (max-width: 1199px) {
+  .side-bottom-link-heading,
+  .color-box,
+  .main-post {
+    margin-top: 60px !important;
+  }
+ 
+}
+
+/* =======//end of Responsive ======= */
+
+/* color: #f8e72c; */

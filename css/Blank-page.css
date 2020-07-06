@@ -1,0 +1,106 @@
+
+/* 
+@font-face{
+    font-family:"reforma";
+    src:url(../fonts/Reforma\ Grotesk\ Medium.otf);
+    src:url(../fonts/Reforma.ttf);
+    
+} */
+ 
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  /* background: #f8fafc; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d1d1b;
+}
+/* basic css end */
+
+/* common css start */
+/*// end of common css */
+
+/* main css start */
+
+/* ===== header part start ===== */
+.header nav {
+  border-bottom: 4px solid #f8e72c;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  color: rgba(0, 0, 0, .7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #1d1d1b;
+}
+
+.moving-text span {
+  white-space: nowrap;
+  font-weight: 600;
+  border-right: 4px solid #f8e72c;
+  padding-right: 10px;
+}
+/* =====//end of header part ===== */
+
+
+/* ===== footer part start ===== */
+.footer {
+  background: #b3b3b3;
+  min-height: 190px;
+  display: grid;
+  place-items: center;
+}
+
+/* =====//end of footer part ===== */
+
+/* ======= Responsive start ======= */
+/* Small devices (landscape phones upto 767px) */
+@media (max-width: 767px) {
+  
+  
+}
+
+
+@media (max-width: 991px) {
+
+  .navbar-light .navbar-nav .nav-link {
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+
+
+}
+
+/* =======//end of Responsive ======= */
+
+/* color: #f8e72c; */

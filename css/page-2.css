@@ -1,0 +1,290 @@
+
+/* 
+@font-face{
+    font-family:"reforma";
+    src:url(../fonts/Reforma\ Grotesk\ Medium.otf);
+    src:url(../fonts/Reforma.ttf);
+    
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  /* background: #f8fafc; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d1d1b;
+}
+/* basic css end */
+
+/* common css start */
+h1 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #748f9e;
+}
+
+.my-btn {
+  font-size: 14px;
+  font-weight: 700;
+  background: #f8e72c;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 150px;
+  display: block;
+}
+
+.my-btn:hover {
+  background: #1d1d1b;
+  color: #fff
+}
+ 
+/*// end of common css */
+
+/* main css start */
+
+/* ===== header part start ===== */
+.header nav {
+  border-bottom: 4px solid #f8e72c;
+}
+
+ 
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  color: rgba(0, 0, 0, .7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+
+.moving-text span {
+  white-space: nowrap;
+  font-weight: 600;
+  border-right: 4px solid #f8e72c;
+  padding-right: 10px;
+}
+
+/* =====//end of header part ===== */
+
+
+/* =====  main content start ===== */
+/*=== left-side-bar start ===*/
+.left-side-bar {
+  background: #f8e72c;
+  padding: 60px 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.left-side-bar span {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  /* letter-spacing: -10px; */
+  line-height: 60px;
+  transform: rotate(-90deg);
+}
+/*===//end of left-side-bar  ===*/
+
+/*=== middle-content start === */
+.middle-content .match .team-1 span,
+.middle-content .match .team-2 span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.middle-content .match .between-team {
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 65px;
+}
+
+.middle-content .button-link li {
+  display: inline-block;
+  padding: 15px;
+
+}
+
+.middle-content .my-btn span {
+  display: block;
+  line-height: 15px;
+}
+
+/* subscrition */
+.subscription ul li {
+  width: 150px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+.subscription .subscription-btn {
+  background: #1d1d1b;
+  display: block;
+  border-radius: 0px;
+  padding: 0px;
+  
+}
+
+.subscription .monthly-subscription .subscription-btn {
+  color: #a28018;
+}
+
+.subscription .personal-subscription .subscription-btn {
+  color: #c7eaff;
+}
+
+.subscription .monthly-subscription .see-more {
+  display: block;
+  background: #c3ba28;
+  padding: 2px 5px;
+  font-size: 14px;
+  max-width: 90%;
+  margin: 10px auto;
+  box-shadow: 0 4px 9px 2px rgba(0, 0, 0, .2);
+  font-weight: 600;
+}
+
+.subscription .personal-subscription .see-more {
+  display: block;
+  background: #b0b6ba;
+  padding: 2px 5px;
+  font-size: 14px;
+  max-width: 90%;
+  margin: 10px auto;
+  box-shadow: 4px 4px 9px 2px rgba(0, 0, 0, .2);
+  font-weight: 600;
+}
+
+.subscription .monthly-subscription .see-more:hover {
+  background: #1d1d1b;
+  color: #fff;
+}
+
+.subscription .personal-subscription .see-more:hover {
+  background: #1d1d1b;
+  color: #fff;
+}
+/* //end of subscription */
+/*===//end of middle-content  === */
+
+/*=== right-side-bar start ===*/
+.right-side-bar {
+  background: #f8e72c;
+  padding: 60px 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.right-side-bar span {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  /* letter-spacing: -10px; */
+  line-height: 60px;
+  transform: rotate(90deg);
+}
+/*===//end of right-side-bar ===*/
+
+
+/* =====//end of  main content ===== */
+
+/* ===== footer part start ===== */
+.footer {
+  background: #b3b3b3;
+  min-height: 190px;
+  display: grid;
+  place-items: center;
+}
+
+/* =====//end of footer part ===== */
+
+/* ======= Responsive start ======= */
+/* Small devices (landscape phones upto 767px) */
+@media (max-width: 767px) {
+  .left-side-bar img {
+    transform: rotate(-90deg);
+  }
+  .left-side-bar {
+    height: auto;
+    padding: 0 30px
+  }
+  .right-side-bar img {
+    transform: rotate(-90deg);
+  }
+  .right-side-bar {
+    height: auto;
+    padding: 0 30px;
+  }
+
+  .middle-content .txt {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+.navbar-light .navbar-nav .nav-link {
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.my-btn {
+  min-width: 116px;
+}
+
+.middle-content .button-link li {
+  padding: 10px;
+}
+
+}
+
+/* =======//end of Responsive ======= */
+
+/* color: #f8e72c; */

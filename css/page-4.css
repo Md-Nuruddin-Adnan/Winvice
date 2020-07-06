@@ -1,0 +1,588 @@
+
+/* 
+@font-face{
+    font-family:"reforma";
+    src:url(../fonts/Reforma\ Grotesk\ Medium.otf);
+    src:url(../fonts/Reforma.ttf);
+    
+} */
+
+ 
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; 
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  /* background: #f8fafc; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d1d1b;
+}
+/* basic css end */
+
+/* common css start */
+h1 {
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #748f9e;
+}
+
+.my-btn {
+  font-size: 14px;
+  font-weight: 700;
+  background: #f8e72c;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 150px;
+  display: block;
+
+}
+ 
+/*// end of common css */
+
+/* main css start */
+
+/* ===== header part start ===== */
+.header .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  /* box-shadow: 0 2px 5px 0px rgba(0,0,0, .3); */
+}
+.header nav {
+  border-bottom: 4px solid #f8e72c;
+}
+ 
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  color: rgba(0, 0, 0, .7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+.moving-text span {
+  white-space: nowrap;
+  font-weight: 600;
+  border-right: 4px solid #f8e72c;
+  padding-right: 10px;
+}
+/* =====//end of header part ===== */
+
+/* === welcome box menu start === */
+.welcome-box {
+  clip-path: polygon(90% 0, 100% 40%, 80% 100%, 20% 100%, 0 40%, 10% 0);
+  width: 320px;
+  height: 100px;
+  background: #f8e72c;
+  margin: auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.welcome-box .welcome-heading {
+  padding-top: 22px;
+}
+
+.welcome-box li {
+  display: inline-block;
+}
+
+.welcome-box .signup,
+.welcome-box .login {
+  display: block;
+  text-align: center;
+  background: #1d1d1b;
+  color: #fff;
+  font-size: 90%;
+  white-space: nowrap;
+  margin-top: 15px;
+  padding: 3px 10px;
+  font-weight: 500;
+}
+
+.welcome-box .signup:hover, .welcome-box .login:hover {
+  background: #F9E72D;
+  color: #1d1d1b;
+}
+
+.welcome-box .login {
+  padding-left: 90px;
+  text-align: right;
+  border-right: 2px solid #fff;
+}
+
+.welcome-box .signup {
+  padding-right: 90px;
+  text-align: right;
+  border-left: 2px solid #fff;
+}
+/* ===//end of welcome box menu  === */
+/* =====  banner start ===== */
+.main-banner {
+  min-height: 300px;
+  background: #1d1d1b;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+/* =====//end of  banner ===== */
+
+
+/* ==== recommendation start ==== */
+.recommendation .heading {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 20px;
+  border-right: 5px solid #F9E72D;
+  text-align: right;
+  line-height: 40px;
+}
+
+.recommendation .recomended-game {
+  padding: 0 20px;
+  text-align: right;
+  border-right: 5px solid #111;
+}
+
+.recommendation .recomended-game li {
+  display: inline-block;
+  padding: 0 3px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.recommendation .recomended-game li:hover::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #F9E72D;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  border-radius: 50%;
+  z-index: -1;
+
+}
+/* =====//end of recommendation ==== */
+
+
+/* ===== slider-section start ===== */
+
+.slider-section .slide-item .slide-item-1,
+.slider-section .slide-item .slide-item-2 {
+  padding: 15px 0;
+  
+}
+
+
+/* ==== img-card start === */
+.black-card,
+.gold-card {
+  background: url(../images/page-4/gold-card-bg.png) no-repeat center center/cover;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  white-space: nowrap;
+  padding: 15px 20px;
+  /* font-weight: 700;
+  color: #fff;
+  font-size: 12px; */
+}
+
+.black-card {
+  background: url(../images/page-4/black-card-bg.png) no-repeat center center/cover;
+}
+
+.black-card .card-tile,
+.gold-card .card-tile {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+
+.black-card img,
+.gold-card img {
+  box-shadow: 0px 21px 30px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.black-card .card-middle .top-text,
+.gold-card .card-middle .top-text{
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+
+
+.black-card .card-middle .middle-text {
+  color: #f1f1f1;
+}
+
+.black-card .card-middle .bottom-text,
+.gold-card .card-middle .bottom-text{
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+.black-card .team-name,
+.gold-card .team-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+/* ====//end of img-card  === */
+
+.slide-item {
+  transform: scaleY(.7);
+  opacity: .3;
+}
+
+
+.slide-item.slick-active {
+  opacity: .8;
+  transform:scale(.9);
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transition: all 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+}
+
+.slide-item.slick-active.slick-center {
+  opacity: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  position: relative;
+  z-index: 9999 !important;
+
+}
+
+
+/* === slick slide start === */
+.prev-arrow ,
+.next-arrow {
+  font-size: 25px;
+  color: #1d1d1b;
+  /* background: linear-gradient(90deg, #fff, red); */
+  position: absolute;
+  cursor: pointer;
+  opacity: .8;
+  /* width: 300px;
+  height: 100%; */
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+  opacity: .8;
+}
+
+.prev-arrow{
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.next-arrow{
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.slick-dots li{
+  display: inline-block;
+  padding: 5px 3px;
+}
+
+.slick-dots{
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+}
+
+.slick-dots button{
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+}
+
+.slick-dots .slick-active button:before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 0;
+}
+/* ===//end of slick slide === */
+/* =====//end of slider-section ===== */
+
+
+
+/*=== subscrition ===*/
+.subscription-heading {
+  border-left: 4px solid #eeb419;
+  padding: 0 15px;
+  text-align: right;
+}
+
+.subscription-heading img {
+  margin-top: -5px;
+  padding-right: 5px;
+}
+
+.subscription ul li {
+  width: 150px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+.subscription .subscription-btn {
+  background: #1d1d1b;
+  display: block;
+  border-radius: 0px;
+  padding: 0px;
+  
+}
+
+.subscription .monthly-subscription .subscription-btn {
+  color: #a28018;
+}
+
+.subscription .personal-subscription .subscription-btn {
+  color: #c7eaff;
+}
+
+.subscription .monthly-subscription .see-more {
+  display: block;
+  background: #c3ba28;
+  padding: 2px 5px;
+  font-size: 14px;
+  max-width: 90%;
+  margin: 10px auto;
+  box-shadow: 0 4px 9px 2px rgba(0, 0, 0, .2);
+  font-weight: 700;
+}
+
+.subscription .monthly-subscription .see-more:hover {
+  background: #1d1d1b;
+  color: #fff;
+}
+
+.subscription .personal-subscription .see-more {
+  display: block;
+  background: #b0b6ba;
+  padding: 2px 5px;
+  font-size: 14px;
+  max-width: 90%;
+  margin: 10px auto;
+  box-shadow: 4px 4px 9px 2px rgba(0, 0, 0, .2);
+  font-weight: 700;
+}
+
+.subscription .personal-subscription .see-more:hover {
+  background: #1d1d1b;
+  color: #fff;
+}
+/*=== //end of subscription ===*/
+
+
+/* =====  app-download start ===== */
+.app-download-heading {
+  border-left: 4px solid #eeb419;
+  padding: 0 15px;
+  text-align: right;
+  display: flex;
+}
+
+/* =====//end of  app-download ===== */
+
+
+/* ===== counter start ===== */
+.counter-box h2 {
+  padding: 15px 10px 0 10px;
+  font-size: 35px;
+}
+
+.counter-box .counter-text {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* =====//end of counter ===== */
+
+
+
+
+
+/* ===== footer part start ===== */
+.footer {
+  background: #b3b3b3;
+  min-height: 190px;
+  display: grid;
+  place-items: center;
+}
+
+/* =====//end of footer part ===== */
+
+/* ======= Responsive start ======= */
+/* Small devices (landscape phones upto 767px) */
+@media (max-width: 767px) {
+  .slide-item {
+    transform: scaleY(.8);
+    opacity: .3;
+  }
+
+  .slide-item.slick-active {
+    transform:scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    
+  }
+  
+  .slide-item.slick-active.slick-center {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+
+
+@media (max-width: 991px) {
+
+.navbar-light .navbar-nav .nav-link {
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+}
+
+/* slider responsive start */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .black-card .card-middle .top-text,
+  .gold-card .card-middle .top-text{
+    font-size: 9px;
+    padding-top: 10px;
+  }
+
+  .black-card .card-middle .bottom-text,
+  .gold-card .card-middle .bottom-text{
+    font-size: 8px;
+  }
+
+  .black-card .team-name, .gold-card .team-name {
+    font-size: 7px;
+    padding-top: 15px;
+  }
+  
+ }
+ /* end of slider responsive */
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .subscription ul li {
+    width: 140px;
+  }
+
+ 
+  .subscription .monthly-subscription .see-more,
+  .subscription .personal-subscription .see-more {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .black-card .card-tile, .gold-card .card-tile {
+    font-size: 12px;
+  }
+
+  .black-card .team-name, .gold-card .team-name {
+    font-size: 12px;
+  }
+
+  .black-card .w-75, .gold-card .w-75 {
+    width: 85% !important;
+  }
+
+  .black-card .card-middle .top-text, .gold-card .card-middle .top-text {
+    padding-top: 30px;
+  }
+}
+
+/* =======//end of Responsive ======= */
+
+/* color: #f8e72c; */
